@@ -2,4 +2,8 @@ tasks:
   - init: yarn install && yarn run build
     command: yarn run start
 
-
+ports:
+  - name: tanstack-react-query-nextjs-example
+    description: server
+    port: 3000
+    onOpen: open-browser
