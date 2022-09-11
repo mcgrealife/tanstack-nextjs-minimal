@@ -15,9 +15,14 @@ const Page2 = () => {
     <main>
       <p>Status: {status}</p>
       <p>Data: {data?.name}</p>
-      <Link href='/'>
-        <a>Link to page 1 (index)</a>
-      </Link>
+      <div id='links'>
+        <Link href='/'>
+          <button>Page 1</button>
+        </Link>
+        <Link href='/page2'>
+          <button>Page 2</button>
+        </Link>
+      </div>
       <p>
         Question: why is useQuery not returning cached data? If both pages are
         using the same queryKey

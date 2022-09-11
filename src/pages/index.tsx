@@ -13,17 +13,20 @@ const Page1 = () => {
 
   return (
     <main>
-      
-        <p>Status: {status}</p>
-        <p>Data: {data?.name}</p>
-        <Link href='/page2'>
-          <a>Link to Page 2</a>
+      <p>Status: {status}</p>
+      <p>Data: {data?.name}</p>
+      <div id='links'>
+        <Link href='/'>
+          <button>Page 1</button>
         </Link>
-        <p>
-          Question: why is useQuery not returning cached data? If both pages are
-          using the same queryKey
-        </p>
- 
+        <Link href='/page2'>
+          <button>Page 2</button>
+        </Link>
+      </div>
+      <p>
+        Question: why is useQuery not returning cached data? If both pages are
+        using the same queryKey
+      </p>
     </main>
   )
 }
